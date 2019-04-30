@@ -65,8 +65,8 @@ namespace APS.Forms
 			this.button3 = new System.Windows.Forms.Button();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.panel2 = new System.Windows.Forms.Panel();
-			this.button4 = new System.Windows.Forms.Button();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
+			this.button4 = new System.Windows.Forms.Button();
 			this.panel1.SuspendLayout();
 			this.panel2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -141,6 +141,7 @@ namespace APS.Forms
 			this.button1.TabIndex = 8;
 			this.button1.Text = "Cadastrar";
 			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.Button1Click);
 			// 
 			// button2
 			// 
@@ -189,15 +190,6 @@ namespace APS.Forms
 			this.panel2.Size = new System.Drawing.Size(154, 178);
 			this.panel2.TabIndex = 12;
 			// 
-			// button4
-			// 
-			this.button4.Location = new System.Drawing.Point(0, 154);
-			this.button4.Name = "button4";
-			this.button4.Size = new System.Drawing.Size(148, 23);
-			this.button4.TabIndex = 0;
-			this.button4.Text = "Importar Foto";
-			this.button4.UseVisualStyleBackColor = true;
-			// 
 			// pictureBox1
 			// 
 			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -207,6 +199,15 @@ namespace APS.Forms
 			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
 			this.pictureBox1.TabIndex = 1;
 			this.pictureBox1.TabStop = false;
+			// 
+			// button4
+			// 
+			this.button4.Location = new System.Drawing.Point(0, 154);
+			this.button4.Name = "button4";
+			this.button4.Size = new System.Drawing.Size(148, 23);
+			this.button4.TabIndex = 0;
+			this.button4.Text = "Importar Foto";
+			this.button4.UseVisualStyleBackColor = true;
 			// 
 			// CadastroUsuario
 			// 
