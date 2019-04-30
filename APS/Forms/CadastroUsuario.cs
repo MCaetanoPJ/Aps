@@ -28,5 +28,11 @@ namespace APS.Forms
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
+		void Button1Click(object sender, EventArgs e)
+		{
+			//Chama a tela Principal
+				TelaPrincipal Tela_Principal = new TelaPrincipal();
+				Tela_Principal.Show();
+		}
 	}
 }
