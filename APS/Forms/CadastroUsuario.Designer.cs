@@ -22,13 +22,13 @@ namespace APS.Forms
 		private System.Windows.Forms.TextBox textBox1;
 		private System.Windows.Forms.TextBox textBox2;
 		private System.Windows.Forms.TextBox textBox3;
-		private System.Windows.Forms.Button button1;
-		private System.Windows.Forms.Button button2;
-		private System.Windows.Forms.Button button3;
+		private System.Windows.Forms.Button BotaoCadastrar;
+		private System.Windows.Forms.Button BotaoLimpar;
+		private System.Windows.Forms.Button BotaoVoltar;
 		private System.Windows.Forms.Panel panel1;
 		private System.Windows.Forms.Panel panel2;
 		private System.Windows.Forms.PictureBox pictureBox1;
-		private System.Windows.Forms.Button button4;
+		private System.Windows.Forms.Button BotaoImportarFoto;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -60,13 +60,13 @@ namespace APS.Forms
 			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.textBox2 = new System.Windows.Forms.TextBox();
 			this.textBox3 = new System.Windows.Forms.TextBox();
-			this.button1 = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
-			this.button3 = new System.Windows.Forms.Button();
+			this.BotaoCadastrar = new System.Windows.Forms.Button();
+			this.BotaoLimpar = new System.Windows.Forms.Button();
+			this.BotaoVoltar = new System.Windows.Forms.Button();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
-			this.button4 = new System.Windows.Forms.Button();
+			this.BotaoImportarFoto = new System.Windows.Forms.Button();
 			this.panel1.SuspendLayout();
 			this.panel2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -133,43 +133,43 @@ namespace APS.Forms
 			this.textBox3.Size = new System.Drawing.Size(307, 20);
 			this.textBox3.TabIndex = 7;
 			// 
-			// button1
+			// BotaoCadastrar
 			// 
-			this.button1.Location = new System.Drawing.Point(134, 152);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(141, 26);
-			this.button1.TabIndex = 8;
-			this.button1.Text = "Cadastrar";
-			this.button1.UseVisualStyleBackColor = true;
-			this.button1.Click += new System.EventHandler(this.Button1Click);
+			this.BotaoCadastrar.Location = new System.Drawing.Point(134, 152);
+			this.BotaoCadastrar.Name = "BotaoCadastrar";
+			this.BotaoCadastrar.Size = new System.Drawing.Size(141, 26);
+			this.BotaoCadastrar.TabIndex = 8;
+			this.BotaoCadastrar.Text = "Cadastrar";
+			this.BotaoCadastrar.UseVisualStyleBackColor = true;
+			this.BotaoCadastrar.Click += new System.EventHandler(this.Button1Click);
 			// 
-			// button2
+			// BotaoLimpar
 			// 
-			this.button2.Location = new System.Drawing.Point(281, 152);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(126, 26);
-			this.button2.TabIndex = 9;
-			this.button2.Text = "Limpar";
-			this.button2.UseVisualStyleBackColor = true;
+			this.BotaoLimpar.Location = new System.Drawing.Point(281, 152);
+			this.BotaoLimpar.Name = "BotaoLimpar";
+			this.BotaoLimpar.Size = new System.Drawing.Size(126, 26);
+			this.BotaoLimpar.TabIndex = 9;
+			this.BotaoLimpar.Text = "Limpar";
+			this.BotaoLimpar.UseVisualStyleBackColor = true;
 			// 
-			// button3
+			// BotaoVoltar
 			// 
-			this.button3.Location = new System.Drawing.Point(3, 152);
-			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(125, 26);
-			this.button3.TabIndex = 10;
-			this.button3.Text = "Voltar";
-			this.button3.UseVisualStyleBackColor = true;
+			this.BotaoVoltar.Location = new System.Drawing.Point(3, 152);
+			this.BotaoVoltar.Name = "BotaoVoltar";
+			this.BotaoVoltar.Size = new System.Drawing.Size(125, 26);
+			this.BotaoVoltar.TabIndex = 10;
+			this.BotaoVoltar.Text = "Voltar";
+			this.BotaoVoltar.UseVisualStyleBackColor = true;
 			// 
 			// panel1
 			// 
 			this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.panel1.Controls.Add(this.label1);
-			this.panel1.Controls.Add(this.button3);
+			this.panel1.Controls.Add(this.BotaoVoltar);
 			this.panel1.Controls.Add(this.label2);
-			this.panel1.Controls.Add(this.button2);
+			this.panel1.Controls.Add(this.BotaoLimpar);
 			this.panel1.Controls.Add(this.label3);
-			this.panel1.Controls.Add(this.button1);
+			this.panel1.Controls.Add(this.BotaoCadastrar);
 			this.panel1.Controls.Add(this.label4);
 			this.panel1.Controls.Add(this.textBox3);
 			this.panel1.Controls.Add(this.comboBox1);
@@ -184,10 +184,10 @@ namespace APS.Forms
 			// 
 			this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.panel2.Controls.Add(this.pictureBox1);
-			this.panel2.Controls.Add(this.button4);
+			this.panel2.Controls.Add(this.BotaoImportarFoto);
 			this.panel2.Location = new System.Drawing.Point(12, 12);
 			this.panel2.Name = "panel2";
-			this.panel2.Size = new System.Drawing.Size(154, 178);
+			this.panel2.Size = new System.Drawing.Size(154, 182);
 			this.panel2.TabIndex = 12;
 			// 
 			// pictureBox1
@@ -200,14 +200,14 @@ namespace APS.Forms
 			this.pictureBox1.TabIndex = 1;
 			this.pictureBox1.TabStop = false;
 			// 
-			// button4
+			// BotaoImportarFoto
 			// 
-			this.button4.Location = new System.Drawing.Point(0, 154);
-			this.button4.Name = "button4";
-			this.button4.Size = new System.Drawing.Size(148, 23);
-			this.button4.TabIndex = 0;
-			this.button4.Text = "Importar Foto";
-			this.button4.UseVisualStyleBackColor = true;
+			this.BotaoImportarFoto.Location = new System.Drawing.Point(0, 154);
+			this.BotaoImportarFoto.Name = "BotaoImportarFoto";
+			this.BotaoImportarFoto.Size = new System.Drawing.Size(148, 23);
+			this.BotaoImportarFoto.TabIndex = 0;
+			this.BotaoImportarFoto.Text = "Importar Foto";
+			this.BotaoImportarFoto.UseVisualStyleBackColor = true;
 			// 
 			// CadastroUsuario
 			// 

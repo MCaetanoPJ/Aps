@@ -54,10 +54,6 @@
     <Compile Include="Forms\CadastroUsuario.Designer.cs">
       <DependentUpon>CadastroUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\RegistrarVisita.cs" />
-    <Compile Include="Forms\RegistrarVisita.Designer.cs">
-      <DependentUpon>RegistrarVisita.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Login.cs" />
     <Compile Include="Forms\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
@@ -65,6 +61,10 @@
     <Compile Include="Forms\TelaPrincipal.cs" />
     <Compile Include="Forms\TelaPrincipal.Designer.cs">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\VideoChamada.cs" />
+    <Compile Include="Forms\VideoChamada.Designer.cs">
+      <DependentUpon>VideoChamada.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -76,14 +76,14 @@
     <EmbeddedResource Include="Forms\CadastroUsuario.resx">
       <DependentUpon>CadastroUsuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\RegistrarVisita.resx">
-      <DependentUpon>RegistrarVisita.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\TelaPrincipal.resx">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\VideoChamada.resx">
+      <DependentUpon>VideoChamada.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

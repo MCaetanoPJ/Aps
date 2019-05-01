@@ -9,3 +9,14 @@ C:\Users\Marcos\Documents\SharpDevelop Projects\APS\APS\obj\Debug\APS.pdb
 C:\Users\Marcos\Documents\SharpDevelop Projects\APS\APS\obj\Debug\APS.Forms.CadastroUsuario.resources
 C:\Users\Marcos\Documents\SharpDevelop Projects\APS\APS\obj\Debug\APS.Forms.EditarPerfil.resources
 C:\Users\Marcos\Documents\SharpDevelop Projects\APS\APS\obj\Debug\APS.Forms.TelaPrincipal.resources
+C:\Users\Marcos\Desktop\Projetos-master\Projetos-master\APS\bin\Debug\APS.exe.config
+C:\Users\Marcos\Desktop\Projetos-master\Projetos-master\APS\bin\Debug\APS.exe
+C:\Users\Marcos\Desktop\Projetos-master\Projetos-master\APS\bin\Debug\APS.pdb
+C:\Users\Marcos\Desktop\Projetos-master\Projetos-master\APS\obj\Debug\APS.csprojResolveAssemblyReference.cache
+C:\Users\Marcos\Desktop\Projetos-master\Projetos-master\APS\obj\Debug\APS.Forms.CadastroUsuario.resources
+C:\Users\Marcos\Desktop\Projetos-master\Projetos-master\APS\obj\Debug\APS.Login.resources
+C:\Users\Marcos\Desktop\Projetos-master\Projetos-master\APS\obj\Debug\APS.Forms.TelaPrincipal.resources
+C:\Users\Marcos\Desktop\Projetos-master\Projetos-master\APS\obj\Debug\APS.csproj.GenerateResource.Cache
+C:\Users\Marcos\Desktop\Projetos-master\Projetos-master\APS\obj\Debug\APS.exe
+C:\Users\Marcos\Desktop\Projetos-master\Projetos-master\APS\obj\Debug\APS.pdb
+C:\Users\Marcos\Desktop\Projetos-master\Projetos-master\APS\obj\Debug\APS.Forms.VideoChamada.resources
