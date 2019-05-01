@@ -1,0 +1,31 @@
+create database Chat_Sockets;
+
+use Chat_Sockets;
+
+create table Usuario(
+Id serial,
+Nome_Completo varchar(100),
+Senha varchar(100),
+IsAdmin bool,
+FotoId int(11)
+);
+
+Create table Foto(
+Id serial,
+Dados_Foto LongBlob,
+End_Foto LongBlob
+);
+
+Create table Mensagens(
+Id serial,
+UsuarioLogadoId int(11),
+UsuarioDestinoId int(11),
+Hora_Mensagem DateTime,
+Texto_Mensagem varchar(300),
+ArquivosId int(11)
+);
+
+Create table Arquivos(
+Id serial,
+End_Arquivo varchar(200)
+);
