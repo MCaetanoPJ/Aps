@@ -20,6 +20,7 @@ namespace APS
 		private System.Windows.Forms.Label Senha;
 		private System.Windows.Forms.Button Entrar;
 		private System.Windows.Forms.Button Cadastrar;
+		private System.Windows.Forms.Button ConfigServidor;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -48,13 +49,14 @@ namespace APS
 			this.Senha = new System.Windows.Forms.Label();
 			this.Entrar = new System.Windows.Forms.Button();
 			this.Cadastrar = new System.Windows.Forms.Button();
+			this.ConfigServidor = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// textBox1
 			// 
 			this.textBox1.Location = new System.Drawing.Point(125, 37);
 			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(280, 20);
+			this.textBox1.Size = new System.Drawing.Size(331, 20);
 			this.textBox1.TabIndex = 0;
 			// 
 			// label1
@@ -69,7 +71,7 @@ namespace APS
 			// 
 			this.textBox2.Location = new System.Drawing.Point(125, 63);
 			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(280, 20);
+			this.textBox2.Size = new System.Drawing.Size(331, 20);
 			this.textBox2.TabIndex = 2;
 			// 
 			// Senha
@@ -82,7 +84,7 @@ namespace APS
 			// 
 			// Entrar
 			// 
-			this.Entrar.Location = new System.Drawing.Point(125, 98);
+			this.Entrar.Location = new System.Drawing.Point(188, 98);
 			this.Entrar.Name = "Entrar";
 			this.Entrar.Size = new System.Drawing.Size(130, 28);
 			this.Entrar.TabIndex = 4;
@@ -92,7 +94,7 @@ namespace APS
 			// 
 			// Cadastrar
 			// 
-			this.Cadastrar.Location = new System.Drawing.Point(273, 98);
+			this.Cadastrar.Location = new System.Drawing.Point(324, 98);
 			this.Cadastrar.Name = "Cadastrar";
 			this.Cadastrar.Size = new System.Drawing.Size(132, 28);
 			this.Cadastrar.TabIndex = 5;
@@ -100,11 +102,22 @@ namespace APS
 			this.Cadastrar.UseVisualStyleBackColor = true;
 			this.Cadastrar.Click += new System.EventHandler(this.CadastrarClick);
 			// 
+			// ConfigServidor
+			// 
+			this.ConfigServidor.Location = new System.Drawing.Point(69, 98);
+			this.ConfigServidor.Name = "ConfigServidor";
+			this.ConfigServidor.Size = new System.Drawing.Size(113, 28);
+			this.ConfigServidor.TabIndex = 6;
+			this.ConfigServidor.Text = "Configurar Servidor";
+			this.ConfigServidor.UseVisualStyleBackColor = true;
+			this.ConfigServidor.Click += new System.EventHandler(this.ConfigServidorClick);
+			// 
 			// Login
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(510, 171);
+			this.Controls.Add(this.ConfigServidor);
 			this.Controls.Add(this.Cadastrar);
 			this.Controls.Add(this.Entrar);
 			this.Controls.Add(this.Senha);

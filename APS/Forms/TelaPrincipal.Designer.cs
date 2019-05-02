@@ -61,6 +61,11 @@ namespace APS.Forms
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaPrincipal));
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.panel2 = new System.Windows.Forms.Panel();
+			this.button1 = new System.Windows.Forms.Button();
+			this.dataGridView1 = new System.Windows.Forms.DataGridView();
+			this.Column1 = new System.Windows.Forms.DataGridViewImageColumn();
+			this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.CampoPesquisar = new System.Windows.Forms.TextBox();
 			this.label3 = new System.Windows.Forms.Label();
 			this.CampoMensagem = new System.Windows.Forms.TextBox();
 			this.panel3 = new System.Windows.Forms.Panel();
@@ -76,19 +81,14 @@ namespace APS.Forms
 			this.label4 = new System.Windows.Forms.Label();
 			this.EditarPerfil = new System.Windows.Forms.Button();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
-			this.CampoPesquisar = new System.Windows.Forms.TextBox();
-			this.dataGridView1 = new System.Windows.Forms.DataGridView();
-			this.button1 = new System.Windows.Forms.Button();
-			this.Column1 = new System.Windows.Forms.DataGridViewImageColumn();
-			this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.panel2.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.panel3.SuspendLayout();
 			this.MensagemEscrita.SuspendLayout();
 			this.tabPage1.SuspendLayout();
 			this.tabPage3.SuspendLayout();
 			this.panel4.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// panel1
@@ -110,6 +110,45 @@ namespace APS.Forms
 			this.panel2.Name = "panel2";
 			this.panel2.Size = new System.Drawing.Size(308, 398);
 			this.panel2.TabIndex = 1;
+			// 
+			// button1
+			// 
+			this.button1.Location = new System.Drawing.Point(259, 4);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(44, 23);
+			this.button1.TabIndex = 5;
+			this.button1.Text = "Ok";
+			this.button1.UseVisualStyleBackColor = true;
+			// 
+			// dataGridView1
+			// 
+			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+			this.Column1,
+			this.Column2});
+			this.dataGridView1.Location = new System.Drawing.Point(3, 32);
+			this.dataGridView1.Name = "dataGridView1";
+			this.dataGridView1.Size = new System.Drawing.Size(300, 361);
+			this.dataGridView1.TabIndex = 4;
+			// 
+			// Column1
+			// 
+			this.Column1.HeaderText = "FotoUsuario";
+			this.Column1.Name = "Column1";
+			this.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+			// 
+			// Column2
+			// 
+			this.Column2.HeaderText = "Nome";
+			this.Column2.Name = "Column2";
+			this.Column2.ReadOnly = true;
+			// 
+			// CampoPesquisar
+			// 
+			this.CampoPesquisar.Location = new System.Drawing.Point(93, 6);
+			this.CampoPesquisar.Name = "CampoPesquisar";
+			this.CampoPesquisar.Size = new System.Drawing.Size(160, 20);
+			this.CampoPesquisar.TabIndex = 0;
 			// 
 			// label3
 			// 
@@ -166,6 +205,7 @@ namespace APS.Forms
 			this.BotaoEnviar.TabIndex = 1;
 			this.BotaoEnviar.Text = "Enviar";
 			this.BotaoEnviar.UseVisualStyleBackColor = true;
+			this.BotaoEnviar.Click += new System.EventHandler(this.BotaoEnviarClick);
 			// 
 			// tabPage2
 			// 
@@ -254,45 +294,6 @@ namespace APS.Forms
 			this.pictureBox1.TabIndex = 0;
 			this.pictureBox1.TabStop = false;
 			// 
-			// CampoPesquisar
-			// 
-			this.CampoPesquisar.Location = new System.Drawing.Point(93, 6);
-			this.CampoPesquisar.Name = "CampoPesquisar";
-			this.CampoPesquisar.Size = new System.Drawing.Size(160, 20);
-			this.CampoPesquisar.TabIndex = 0;
-			// 
-			// dataGridView1
-			// 
-			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-			this.Column1,
-			this.Column2});
-			this.dataGridView1.Location = new System.Drawing.Point(3, 32);
-			this.dataGridView1.Name = "dataGridView1";
-			this.dataGridView1.Size = new System.Drawing.Size(300, 361);
-			this.dataGridView1.TabIndex = 4;
-			// 
-			// button1
-			// 
-			this.button1.Location = new System.Drawing.Point(259, 4);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(44, 23);
-			this.button1.TabIndex = 5;
-			this.button1.Text = "Ok";
-			this.button1.UseVisualStyleBackColor = true;
-			// 
-			// Column1
-			// 
-			this.Column1.HeaderText = "FotoUsuario";
-			this.Column1.Name = "Column1";
-			this.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-			// 
-			// Column2
-			// 
-			this.Column2.HeaderText = "Nome";
-			this.Column2.Name = "Column2";
-			this.Column2.ReadOnly = true;
-			// 
 			// TelaPrincipal
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -304,8 +305,10 @@ namespace APS.Forms
 			this.Controls.Add(this.panel1);
 			this.Name = "TelaPrincipal";
 			this.Text = "TelaPrincipal";
+			this.Load += new System.EventHandler(this.TelaPrincipalLoad);
 			this.panel2.ResumeLayout(false);
 			this.panel2.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
 			this.panel3.ResumeLayout(false);
 			this.MensagemEscrita.ResumeLayout(false);
 			this.tabPage1.ResumeLayout(false);
@@ -313,7 +316,6 @@ namespace APS.Forms
 			this.tabPage3.ResumeLayout(false);
 			this.panel4.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
 			this.ResumeLayout(false);
 
 		}

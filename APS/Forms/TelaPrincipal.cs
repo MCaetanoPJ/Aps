@@ -28,11 +28,21 @@ namespace APS.Forms
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
+		void TelaPrincipalLoad(object sender, EventArgs e)
+		{
+			Conexao.ConexaoSockets IniciarConexao = new Conexao.ConexaoSockets();
+			IniciarConexao.LerArquivoTexto("Conectado");
+		}
 		void EditarPerfilClick(object sender, EventArgs e)
 		{
 			//Chama a tela de Editar Perfil
 				CadastroUsuario Tela_Perfil = new CadastroUsuario();
 				Tela_Perfil.Show();
+		}
+		void BotaoEnviarClick(object sender, EventArgs e)
+		{
+			Conexao.ConexaoSockets IniciarConexao = new Conexao.ConexaoSockets();
+			IniciarConexao.LerArquivoTexto(CampoMensagem.Text);
 		}
 	}
 }

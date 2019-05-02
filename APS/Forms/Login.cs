@@ -41,5 +41,10 @@ namespace APS
 				CadastroUsuario Tela_Cadastro = new CadastroUsuario();
 				Tela_Cadastro.Show();
 		}
+		void ConfigServidorClick(object sender, EventArgs e)
+		{
+			Conexao.ConfigSockets Configuracao = new Conexao.ConfigSockets();
+			Configuracao.Show();
+		}
 	}
 }
