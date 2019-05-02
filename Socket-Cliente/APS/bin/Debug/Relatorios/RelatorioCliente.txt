@@ -1,0 +1,2 @@
+(02/05/2019 03:27:40) 192.168.49.1:20 Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 192.168.49.1:20
+
